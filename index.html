@@ -5,22 +5,50 @@
         <title>Rock Paper Scissors</title>
         <meta charset="UTF -8">
         <link rel="stylesheet" href="style.css">
-        <link rel="js-sheet" href="functions.js">
+        <script type="text/javascript" src="./functions.js"></script>
 
     </head>
     <body>
         <div>
-            <div>
-
+            <div class="header">
+<!-- 
                 <h1>The Odin Project</h1>
                 <h3>Rock Paper Scissors Project</h3>
-                <img class="rockPaper" src="images/rps.svg" alt="Rock Paper Scissors">
+                <img class="rockPaper" src="images/rps.svg" alt="Rock Paper Scissors"> -->
+
+                
+                <div id="game">
+                    <button onClick="choose('rock')">Rock</button>
+                    <button onClick="choose('paper')">Paper</button>
+                    <button onClick="choose('scissors')">Scissors</button>
+                    <div id="result"></div>
+                    <br>
+                    <br>
+                    <button onClick="test()">DEBUG</button>
+                </div>
                 
             </div>
+            <div class="header">
+
+                <input type="button" id="Rock" value="Rock">
+
+                <script>
+                    
+                    let option = "MySelection";
+                    document.getElementById("Rock").value = option;
+                    alert (option)
+
+                </script>
+
+            </div>
+
+
+
+
         </div>
     
         <footer>
-            <p>Thanks to <a href="https://freesvg.org">freesvg.org for image</a></p>
+            <p>Thanks to <a href="https://freesvg.org">freesvg.org for the RPS image</a></p>
         </footer>
     </body>
 </html>
